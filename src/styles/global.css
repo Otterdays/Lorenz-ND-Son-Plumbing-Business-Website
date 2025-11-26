@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: #f9f4ea;
+  color: #1f2a44;
+}
+
+a {
+  @apply text-accent hover:text-gold transition-colors duration-200;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-base font-semibold uppercase tracking-wide text-navy shadow-lg shadow-gold/30 transition-all duration-200 hover:-translate-y-0.5 hover:bg-gold/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gold;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-gold px-6 py-3 text-base font-semibold uppercase tracking-wide text-gold transition-all duration-200 hover:bg-gold hover:text-navy focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gold;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full bg-cream px-4 py-2 text-sm font-semibold uppercase tracking-wide text-navy shadow-badge;
+}
+
