@@ -1,9 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
 import path from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -48,7 +44,7 @@ const config: GatsbyConfig = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: path.resolve(__dirname, "static")
+        path: path.resolve(process.cwd(), "static")
       }
     }
   ]
