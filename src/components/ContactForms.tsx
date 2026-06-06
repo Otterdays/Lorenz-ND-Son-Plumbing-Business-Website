@@ -1,6 +1,13 @@
 import React from "react";
 
-const sharedFields = [
+type FieldConfig = {
+  label: string;
+  name: string;
+  type: "text" | "email" | "tel" | "textarea" | "select";
+  options?: string[];
+};
+
+const sharedFields: FieldConfig[] = [
   {
     label: "Preferred Contact",
     name: "contactPreference",

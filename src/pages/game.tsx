@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import StickyEmergencyWidget from "../components/StickyEmergencyWidget";
